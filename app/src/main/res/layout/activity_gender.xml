@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+
+        android:id="@+id/rvContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_theme"
+        android:tag="layout/activity_pronouns_0">
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_toRightOf="@+id/back"
+                android:fontFamily="@font/euclid_bold"
+                android:text="Step 2 / 8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/rl_toolbar"
+            android:id="@+id/cvNative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:minHeight="280dp">
+
+
+            <FrameLayout
+                android:id="@+id/flNative"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <FrameLayout
+                android:id="@+id/flNativeMax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cvNative"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/euclid_medium"
+            android:gravity="center"
+            android:text="So nice to meet you!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerText"
+            android:scrollbars="none">
+
+
+
+        <LinearLayout
+            android:id="@+id/llContain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/euclid_regular"
+                android:text="Let AnaAi know your pronouns"
+                android:textAlignment="center"
+                android:textColor="#80ffffff"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:id="@+id/llContains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btnMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_80sdp"
+                    android:layout_marginRight="@dimen/_80sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rent_full_et_bg"
+                    android:fontFamily="@font/euclid_bold"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_30sdp"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="He"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/btnFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_80sdp"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_80sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rent_full_et_bg"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/euclid_bold"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_30sdp"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="She"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/btnThey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_80sdp"
+                    android:layout_marginRight="@dimen/_80sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rent_full_et_bg"
+                    android:fontFamily="@font/euclid_bold"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_30sdp"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="They"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/euclid_bold"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="#80ffffff"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</layout>

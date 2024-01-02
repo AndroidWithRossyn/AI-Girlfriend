@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rent_bg_bottomsheet">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/euclid_medium"
+            android:gravity="center"
+            android:text="Create an Account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:src="@drawable/ic_baseline_cancel_24" />
+
+        <TextView
+            android:id="@+id/header24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mHeader"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/euclid_regular"
+            android:gravity="center"
+            android:text="Register to save your data,or login to access your account."
+            android:textColor="#b3ffffff"
+            android:textSize="@dimen/_13sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header24"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_google"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20ssp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/gradient_bg"
+                android:elevation="@dimen/_1ssp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_google"
+                    android:layout_width="@dimen/_25ssp"
+                    android:layout_height="@dimen/_25ssp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:padding="@dimen/_2ssp"
+                    android:src="@drawable/ic_google" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="@dimen/_10ssp"
+                    android:layout_marginLeft="@dimen/_10ssp"
+                    android:layout_marginRight="@dimen/_10ssp"
+                    android:layout_toRightOf="@+id/ic_google"
+                    android:fontFamily="@font/euclid_bold"
+                    android:padding="@dimen/_8ssp"
+                    android:text="@string/continue_with_google"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/rl_google"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@drawable/rent_bg_border"
+                android:elevation="@dimen/_1ssp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_googles"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_mail" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/conts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="@dimen/_10ssp"
+                    android:layout_marginLeft="@dimen/_10ssp"
+                    android:layout_marginRight="@dimen/_10ssp"
+                    android:layout_toRightOf="@+id/ic_googles"
+                    android:fontFamily="@font/euclid_bold"
+                    android:padding="@dimen/_8ssp"
+                    android:text="Continue with Email   "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

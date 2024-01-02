@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_theme"
+        android:fillViewport="true"
+        android:tag="layout/activity_main_0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/header2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:fontFamily="@font/euclid_bold"
+                    android:text="Step 1 / 8"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cvNative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_toolbar"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:minHeight="280dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:gravity="center"
+                    android:text="Ads Loading..."
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+
+                <FrameLayout
+                    android:id="@+id/flNative"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+
+                <FrameLayout
+                    android:id="@+id/flNativeMax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvNative"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/euclid_medium"
+                android:gravity="center"
+                android:text="So nice to meet you!"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/llContain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerText"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/euclid_regular"
+                    android:gravity="center"
+                    android:text="What is your name?"
+                    android:textAlignment="center"
+                    android:textColor="#80ffffff"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="#80ffffff"
+                    android:cursorVisible="true"
+                    android:fontFamily="@font/euclid_regular"
+                    android:hint="Your Name"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/_9sdp"
+                    android:layout_marginBottom="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#80ffffff" />
+
+                <TextView
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/euclid_bold"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="#80ffffff"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>

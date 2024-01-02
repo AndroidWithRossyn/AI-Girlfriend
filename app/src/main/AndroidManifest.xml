@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+
+    <uses-permission
+        android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.gsbusiness.aigirlfriend.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:name=".Utils.CheckUpdatePlay"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:extractNativeLibs="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AIGirlfriend"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.SelectAiGirlActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.LogoActivity"
+            android:exported="false">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity-alias
+            android:name="com.htcodes.aigirlfriend.ChooseLogoActivityAlias"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/logo2"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/logo2"
+            android:targetActivity="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.LogoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.FaqActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.AIChatActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/UseTheme" />
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.UserPersonalDataActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.AISettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.PeaceFulActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.GoalsNameActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.PersonalInterestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.GirlNameActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:windowSoftInputMode="stateVisible" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.TweakPersonalityActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.SelectAIActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/UseTheme" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.GenderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.GuestLoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.PolicyActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/UseTheme" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.StartActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name="com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Activity.SecondActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.contentprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:visibleToInstantApps="true" />
+
+        <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/Admob_AppID" />
+
+    </application>
+
+</manifest>

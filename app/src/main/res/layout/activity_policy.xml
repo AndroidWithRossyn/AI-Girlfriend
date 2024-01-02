@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_theme">
+
+        <RelativeLayout
+            android:id="@+id/mHeader"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/main_theme"
+            android:elevation="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:src="@drawable/ic_back"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/euclid_medium"
+                android:text="@string/privacy_policy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp" />
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/wv_privacyAndPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/mNext"
+            android:layout_below="@+id/mHeader" />
+
+        <TextView
+            android:id="@+id/mNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/gradient_bg"
+            android:fontFamily="@font/euclid_bold"
+            android:gravity="center"
+            android:text="@string/accept_amp_continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+    </RelativeLayout>
+</layout>

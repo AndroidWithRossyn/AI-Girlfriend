@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eightbitlab.com.blurview.BlurView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/blurView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginHorizontal="@dimen/_30sdp"
+    android:layout_marginLeft="@dimen/_30sdp"
+    android:layout_marginRight="@dimen/_30sdp"
+    android:background="@drawable/ent_bg"
+    android:paddingVertical="@dimen/_20sdp"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingBottom="@dimen/_20sdp">
+
+    <LinearLayout
+        android:id="@+id/llContain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aoboshi_one"
+            android:gravity="center"
+            android:text="Enter Girl Name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/blue_et_bg">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/aoboshi_one"
+                android:gravity="center"
+                android:hint="Enter name"
+                android:inputType="textNoSuggestions"
+                android:padding="@dimen/_9sdp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/gradient_bg"
+            android:fontFamily="@font/euclid_bold"
+            android:src="@drawable/next"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+</eightbitlab.com.blurview.BlurView>

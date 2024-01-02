@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_theme"
+    android:tag="layout/activity_start1_0">
+    <RelativeLayout
+        android:id="@+id/cvNative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="280dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:gravity="center"
+            android:text="Ads Loading..."
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+
+        <FrameLayout
+            android:id="@+id/flNative"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+        <FrameLayout
+            android:id="@+id/flNativeMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/mImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fdsfdsf"
+        android:layout_below="@+id/cvNative"
+        android:src="@drawable/girl_av4" />
+
+    <TextView
+        android:id="@+id/fdsfdsf"
+        android:layout_above="@+id/mBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/euclid_medium"
+        android:gravity="center"
+        android:text="@string/i_am_here_to_assist_you_with_any_questions_or_inquiries_you_may_have"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp" />
+
+
+    <RelativeLayout
+        android:id="@+id/mBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/mNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/gradient_bg"
+            android:fontFamily="@font/euclid_bold"
+            android:gravity="center"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+    </RelativeLayout>
+</RelativeLayout>
+</layout>

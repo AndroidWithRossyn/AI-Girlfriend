@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:foregroundGravity="center"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/_15sdp"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/mAnsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat.Utils.Typewriter
+                        android:id="@+id/tv_msg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/their_message"
+                        android:fontFamily="@font/euclid_regular"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="2dp"
+                        android:maxWidth="@dimen/_150sdp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="inherit"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/their_message"
+                    android:visibility="gone">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animation_view"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:padding="@dimen/_3sdp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/loader_dots" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/contentLikeReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/mAnsView"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/mLike"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:background="@drawable/rent_bg_rounded"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/thumb_up" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/mDislike"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:background="@drawable/rent_bg_rounded"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/thumb_down" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/mReport"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:layout_toEndOf="@+id/mDislike"
+                        android:background="@drawable/rent_bg_rounded"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/report" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_80sdp"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_msg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_sender_final"
+                        android:fontFamily="@font/euclid_regular"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="2dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="inherit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/giftSticker"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/gift_bg1"
+                        android:padding="@dimen/_16sdp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+</RelativeLayout>

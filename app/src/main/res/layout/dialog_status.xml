@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eightbitlab.com.blurview.BlurView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/blurView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginHorizontal="@dimen/_30sdp"
+    android:layout_marginLeft="@dimen/_30sdp"
+    android:layout_marginRight="@dimen/_30sdp"
+    android:background="@drawable/ent_bg"
+    android:paddingVertical="@dimen/_20sdp"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingBottom="@dimen/_20sdp">
+
+    <LinearLayout
+        android:id="@+id/llContain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aoboshi_one"
+            android:gravity="center"
+            android:text="Change Status"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <LinearLayout
+            android:id="@+id/llContains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnMale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/blue_et_bg"
+                android:drawableTop="@drawable/ic_male"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/euclid_regular"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_20sdp"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:text="Friends"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/btnFemale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rent_full_et_bg"
+                android:drawableTop="@drawable/ic_women"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/euclid_regular"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_20sdp"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:text="Even More"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/euclid_bold"
+            android:src="@drawable/next"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+</eightbitlab.com.blurview.BlurView>

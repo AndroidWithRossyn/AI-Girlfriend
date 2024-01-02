@@ -1,0 +1,101 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "ccom.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    externalNativeBuild {
+        cmake {
+            version '3.22.1'
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10'
+
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.github.Dimezis:BlurView:version-2.0.3'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.airbnb.android:lottie:6.1.0'
+
+    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-config'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.firebase:firebase-client-android:2.5.2'
+
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.github.GrenderG:Toasty:1.5.2'
+
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+    implementation 'org.imaginativeworld.oopsnointernet:oopsnointernet:2.0.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.9.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+
+    implementation 'com.onesignal:OneSignal:[5.0.0, 5.99.99]'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.2"
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.6.2"
+
+    implementation 'com.google.android.gms:play-services-ads:22.6.0'
+
+    implementation 'com.facebook.android:audience-network-sdk:6.14.0'
+    implementation 'com.google.ads.mediation:facebook:6.16.0.0'
+
+    implementation 'com.facebook.infer.annotation:infer-annotation:0.18.0'
+
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "754551494504",
+    "project_id": "ai-gf-dbd18",
+    "storage_bucket": "ai-gf-dbd18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754551494504:android:d8bea278d9fe197baca8dd",
+        "android_client_info": {
+          "package_name": "ccom.htcodes.ai.girlfriend.virtual.gf.dating.lover.chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrbeqvZcZBjEmKgtcsmRuApvXOB3cQJ6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

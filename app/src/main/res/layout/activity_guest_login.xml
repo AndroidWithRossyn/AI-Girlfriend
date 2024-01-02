@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_theme"
+        android:tag="layout/activity_google_log_in_0">
+
+        <RelativeLayout
+            android:id="@+id/cvNative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="280dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:gravity="center"
+                android:text="Ads Loading..."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+            <FrameLayout
+                android:id="@+id/flNative"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <FrameLayout
+                android:id="@+id/flNativeMax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/euclid_bold"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_google"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20ssp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/gradient_bg"
+                android:elevation="@dimen/_1ssp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_google"
+                    android:layout_width="@dimen/_25ssp"
+                    android:layout_height="@dimen/_25ssp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:padding="@dimen/_2ssp"
+                    android:src="@drawable/ic_google" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="@dimen/_10ssp"
+                    android:layout_marginLeft="@dimen/_10ssp"
+                    android:layout_marginRight="@dimen/_10ssp"
+                    android:layout_toRightOf="@+id/ic_google"
+                    android:fontFamily="@font/euclid_bold"
+                    android:padding="@dimen/_8ssp"
+                    android:text="@string/continue_with_google"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/rl_google"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/rent_bg_border"
+                android:elevation="@dimen/_1ssp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_googles"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/user"
+                    android:tint="@color/white"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/guest"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="@dimen/_10ssp"
+                    android:layout_marginLeft="@dimen/_10ssp"
+                    android:layout_marginRight="@dimen/_10ssp"
+                    android:layout_toRightOf="@+id/ic_googles"
+                    android:fontFamily="@font/euclid_bold"
+                    android:padding="@dimen/_8ssp"
+                    android:text="@string/or"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/conts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_mail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/euclid_regular"
+                android:text="Continue with Email   "
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_13ssp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
